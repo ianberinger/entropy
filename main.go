@@ -24,11 +24,17 @@ func main() {
 		return
 	}
 	defer file.Close()
-
-	fmt.Println("Entropy of", filePath, ":", Entropy(file))
+	entropy, err := Entropy(file)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	fmt.Println("Entropy of", filePath, ":", entropy)
 }
 
-func Entropy(r io.Reader) (entropy float32) {
+// Entropy takes any io.Reader and calculates its entropy
+// It returns the entropy value (between 0 and 1) and any read error encountered.
+func Entropy(r io.Reader) (entropy float32, err error) {
 	var bytes [256]int
 	var readSize int
 	buf := make([]byte, 1)
@@ -36,8 +42,7 @@ func Entropy(r io.Reader) (entropy float32) {
 	for {
 		n, err := r.Read(buf)
 		if err != nil && err != io.EOF {
-			fmt.Println(err)
-			return 0
+			return 0, err
 		}
 		if n == 0 {
 			break

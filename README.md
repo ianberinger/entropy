@@ -1,5 +1,5 @@
 # entropy
-[![GoDoc](https://godoc.org/github.com/ianberinger/entropy?status.svg)](https://godoc.org/github.com/ianberinger/entropy)
+[![Build Status](https://travis-ci.org/ianberinger/entropy.svg)](https://travis-ci.org/ianberinger/entropy) [![GoDoc](https://godoc.org/github.com/ianberinger/entropy?status.svg)](https://godoc.org/github.com/ianberinger/entropy)
 
 entropy calculation package & commandline tool
 
