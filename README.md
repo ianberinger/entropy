@@ -1,5 +1,5 @@
 # entropy
-[![Build Status](https://travis-ci.org/ianberinger/entropy.svg)](https://travis-ci.org/ianberinger/entropy) [![GoDoc](https://godoc.org/github.com/ianberinger/entropy?status.svg)](https://godoc.org/github.com/ianberinger/entropy)
+[![Build Status](https://travis-ci.org/ianberinger/entropy.svg)](https://travis-ci.org/ianberinger/entropy) [![GoDoc](https://godoc.org/github.com/ianberinger/entropy?status.svg)](https://godoc.org/github.com/ianberinger/entropy/entropy)
 
 entropy calculation package & commandline tool
 
@@ -15,6 +15,6 @@ and outputs the entropy (0,1) of that file.
 
 You can use entropy in your own go packages:
 	
-	import "github.com/ianberinger/entropy"
+	import "github.com/ianberinger/entropy/entropy"
 
-See [godoc](http://godoc.org/github.com/ianberinger/entropy) for documentation.
+See [godoc](http://godoc.org/github.com/ianberinger/entropy/entropy) for documentation.
