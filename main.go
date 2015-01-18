@@ -10,6 +10,7 @@ import (
 )
 
 func main() {
+	pretty := flag.Bool("pretty", false, "activate prettyprint")
 	flag.Parse()
 	arg0 := flag.Arg(0)
 
@@ -29,5 +30,10 @@ func main() {
 		fmt.Println(err)
 		return
 	}
-	fmt.Println("Entropy of", filePath, ":", entropy)
+	if *pretty {
+		fmt.Printf("Entropy of %s: %f\n", filePath, entropy)
+	} else {
+		fmt.Println(entropy)
+	}
+
 }
