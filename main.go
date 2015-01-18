@@ -1,3 +1,7 @@
+//Package entropy calculates entropy values.
+//Exmaple usage:
+//		file,_ := os.Open("foo.txt")
+//		v, err := entropy.Entropy(file) // v is now the entropy value of "foo.txt" e.g., 0.38498
 package main
 
 import (
