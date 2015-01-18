@@ -5,6 +5,7 @@ entropy calculation package & commandline tool
 
 ### Install
 	$go get github.com/ianberinger/entropy
+or download a binary from [here](https://github.com/ianberinger/entropy/releases).
 
 ### Usage
 Entropy takes a relative or absolute filepath as input e.g.,
@@ -21,4 +22,4 @@ You can use entropy in your own go packages:
 
 	import "github.com/ianberinger/entropy/entropy"
 
-See [godoc](http://godoc.org/github.com/ianberinger/entropy/entropy) for documentation.
+See [godoc](https://godoc.org/github.com/ianberinger/entropy/entropy) for documentation.
